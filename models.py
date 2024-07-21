@@ -10,8 +10,9 @@ class Roles(db.Model):
 class User(db.Model):
     user_id = db.Column(db.Integer, primary_key = True)
     username = db.Column(db.String[32], unique=True)
-    passhash = db.Column(db.String[256], nullable=False)
-    name = db.Column(db.String[64], nullable=False)
+    password = db.Column(db.String[256], nullable=False)
+    email = db.Column(db.String[256], nullable = False)
+    user_status = db.Column(db.Integer, nullable = False)
     r_id = db.Column(db.Integer, db.ForeignKey('roles.r_id'), nullable=False)
     role = db.relationship('Roles', backref=db.backref('user', lazy=True))
 
@@ -29,7 +30,8 @@ class Sponsor(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
     industry = db.Column(db.String, nullable=False)
     budget = db.Column(db.Integer, nullable=False)
-    user = db.relationship('User', backref=db.backref('influencer', lazy=True))
+    user = db.relationship('User', backref=db.backref('sponsor', lazy=True))
 
 with app.app_context():
     db.create_all()
+

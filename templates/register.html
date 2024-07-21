@@ -1,30 +1,26 @@
-{% extends 'layout.html' %}
+<!-- {% extends 'layout.html' %}
 
 {% block title %}
     Register Page
 {% endblock %}
 {% block content %}
 
-<h1 class="display-1">Register</h1>
-<form action="" class="form">
-    <div class="form-group">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" name="username" required>
-    </div>
-    <div class="form-group">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" name="password" required>
-    </div>
-    <div class="form-group">
-        <label for="confirm_password" class="form-label">Confirm Password</label>
-        <input type="password" class="form-control" name="confirm_password" required>
-    </div>
-    <div class="form-group">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" name="name" id="name">
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Register" class="btn btn-primary">
-    </div>
-</form>
-{% endblock %}
+    <body>
+        <br>
+        <div class="button">
+            <button type="button" class="btn btn-primary" id="influencerReg">Register as an Influencer</button>
+        </div>
+        <br>
+        <div class="button">
+            <button type="button" class="btn btn-primary" id="sponsorReg">Register as a Sponsor</button>
+        </div>
+    <script type>
+      document.getElementById("influencerReg").onclick = function() {
+        location.href = "{{ url_for('register_influencer') }}"; // Replace with the URL of the page you want to redirect to
+      };
+      document.getElementById('sponsorReg').addEventListener('click', function() {
+        location.href = "{{ url_for('register_sponsor') }}"; // Replace with the URL of the page you want to redirect to
+      });
+    </script>
+</body>
+{% endblock %} -->

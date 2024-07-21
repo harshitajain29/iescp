@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <form class="mx-auto" action="" method="POST">
+            <h4 class="text-center">Register as an Influencer</h4>
+
+            <div class="mb-3 mt-5 input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping">@</span>
+              <input type="text" class="form-control" name="username" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="mb-3 mt-5">
+                <label for="category" class="form-label">Category</label>
+                <input type="category" class="form-control" name="category" id="category">
+            </div>
+            <div class="mb-3 mt-5">
+              <label for="platform" class="form-label">Platform</label>
+              <input type="platform" class="form-control" name="platform" id="platform">
+          </div>
+            <!-- <div class="mb-3 mt-5 input-group">
+              <label class="input-group-text" for="platform">Platform: </label>
+              <select class="form-select" id="platform">
+                <option selected>Choose...</option>
+                <option value="1">Facebook</option>
+                <option value="2">Instagram</option>
+                <option value="3">Twitter</option>
+                <option value="4">Youtube</option>
+              </select>
+          </div> -->
+          <div class="mb-3 mt-5">
+            <label for="niche" class="form-label">Niche: </label>
+            <input type="niche" class="form-control" name="niche" id="niche">
+        </div>
+            <!-- <div class="mb-3 mt-5 input-group">
+                <label class="input-group-text" for="niche">Niche: </label>
+                <select class="form-select" id="niche">
+                  <option selected>Choose...</option>
+                  <option value="1">Fashion and Beauty</option>
+                  <option value="2">Fitness and Wellness</option>
+                  <option value="3">Travel and Adventure</option>
+                  <option value="4">Technology</option>
+                  <option value="5">Finance</option>
+                </select>
+            </div> -->
+            <div class="mb-3 mt-5">
+                <label for="reach" class="form-label">Reach</label>
+                <input type="reach" name="reach" class="form-control" id="reach">
+            </div>
+            <div class="mb-3 mt-5">
+                <label for="email" class="form-label">Email Id</label>
+                <input type="email" name="email" class="form-control" id="email">
+              </div>
+            <div class="mb-3 mt-5">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" name="password" class="form-control" id="password">
+            </div>
+            <div class="mb-3">
+                <label for="confirm_password" class="form-label">Confirm Password</label>
+                <input type="password" name="confirm_password" class="form-control" id="confirm_password">
+              </div>
+            <button type="submit" class="btn btn-primary mt-4">Register</button>
+          </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

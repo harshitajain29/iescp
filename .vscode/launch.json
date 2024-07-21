@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/JainHarshita/capsense/capsense-button-slider/source",
-      "program": "c:/Users/JainHarshita/capsense/capsense-button-slider/source/build/Debug/outDebug",
+      "cwd": "c:/Users/JainHarshita/Ethernet/tcp-c/mtb-example-ethernet-tcp-client/source",
+      "program": "c:/Users/JainHarshita/Ethernet/tcp-c/mtb-example-ethernet-tcp-client/source/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
