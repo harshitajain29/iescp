@@ -13,20 +13,20 @@
   </head>
   <body>
     <div class="container-fluid">
-        <form class="mx-auto" action="" method="POST">
+        <form class="mx-auto" action="/login" method="POST">
             <h4 class="text-center">Login</h4>
             <div class="mb-3 mt-5">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email">
+              <input type="email" class="form-control" name="email" id="email">
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password">
+              <input type="password" class="form-control" name = "password" id="password">
             </div>
             <button type="submit" class="btn btn-primary mt-4">Login</button>
             <p> Not a user? Register here: </p>
-            <button type="submit" class="btn btn-primary mt-2">Influencer Register</button>
-            <button type="submit" class="btn btn-primary mt-4">Sponsor Register</button>
+            <a href="/register_influencer" class="btn btn-primary mt-2">Influencer Register</a>
+            <a href="/register_sponsor" class="btn btn-primary mt-4">Sponsor Register</a>
           </form>
     </div>
 

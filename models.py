@@ -13,16 +13,22 @@ class User(db.Model):
     password = db.Column(db.String[256], nullable=False)
     email = db.Column(db.String[256], nullable = False)
     user_status = db.Column(db.Integer, nullable = False)
+    profile_created = db.Column(db.Integer, nullable = False)
     r_id = db.Column(db.Integer, db.ForeignKey('roles.r_id'), nullable=False)
     role = db.relationship('Roles', backref=db.backref('user', lazy=True))
 
 class Influencer(db.Model):
     influencer_id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
-    category = db.Column(db.String, nullable=False)
     platform = db.Column(db.String, nullable=False)
     niche = db.Column(db.String, nullable=False)
     reach = db.Column(db.Integer, nullable=False)
+    FName = db.Column(db.String[256])
+    LName = db.Column(db.String[256])
+    Birthday = db.Column(db.DateTime)
+    Bio = db.Column(db.String)
+    Photo = db.Column(db.String[255])
+    link = db.Column(db.String[255])
     user = db.relationship('User', backref=db.backref('influencer', lazy=True))
 
 class Sponsor(db.Model):
